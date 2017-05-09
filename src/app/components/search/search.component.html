@@ -6,10 +6,12 @@
 <form action="">
 <div class="form-group">
   <label for=""></label>
-  <input type="text" class="form-control" name="search" [(ngModel)]="search" name="search"
-          placeholder="Search artist" (keyup)=Search(search)>
+  <input type="text" class="form-control" name="search" [(ngModel)]="search"
+        placeholder="Search artist" (keyup)=Search(search)>
   <small id="helpId" class="form-text text-muted">Search for your favorite artists</small>
 </div>
+
+
 </form>
 
 <div *ngIf="searchRes">
